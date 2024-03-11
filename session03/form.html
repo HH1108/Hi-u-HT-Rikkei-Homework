@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        form hay còn gọi là biểu mẫu dùng để thu thập dữ liệu gửi lên server
+        vd: form đăng kí, đăng nhập
+        form khảo sát chất lượng đào tạo
+        form nhập thông tin thanh toán
+        các thẻ hay dùng trong form
+        atrribute(thuộc tính)
+        -action là địa chỉ nơi nhận dữ liệu
+        - các method sử dụng trong form (get/post)
+        - id giống như CCCD, chức năng (thuộc tính for của lablel có giá trị bằng với giá trị thuộc tính
+        id trong thẻ input thì tự động focus)
+        - name để định danh cho input(lấy dữ liệu gửi lên server )
+        - value: giá trị của ô input
+        - placeholder: gợi ý nội dung nhập
+        -type=text( thuộc tính của ô input mặc định)
+        -type=password: khi nhập sẽ ẩn thông tin
+        - type=number: nhập số
+        -type=checkbox: chọn nhiều mục cần chọn
+        -type=radio: chọn 1 trong nhiều
+        -disable: ko tương tác được
+        các thẻ hay dùng trong form: 
+        - thẻ label: tiêu đề 
+        - input: nhập dữ liệu, thông tin vào
+        - select và option: ô chọn xổ xuống
+     -->
+
+     <form action="">
+        <label for="">email</label>
+        <input type="text" placeholder="email của bạn"><br>
+        <label for="">giới tính</label><br>
+        <input type="radio" name="gender"> nam <br>
+        <input type="radio" name="gender"> nữ <br>
+        <input type="radio" name="gender"> khác <br>
+        <select name="" id="">
+            <option value="">Mễ trì</option>
+            <option value="">đống đa</option>
+            <option value="">cầu giấy</option>
+        </select> <br>
+        <label for="">chỉ đọc ko sửa</label>
+        <input readonly value="5"><br>
+        <label for="">chỉnh độ dài ô</label>
+        <input size="5"><br>
+        <label for="">kí tự tối đa</label>
+        <input maxlength="5"><br>
+        <label for="">ngày tháng</label>
+        <input type="date"><br>
+        <label for="">min, max</label>
+        <input min="0" max="5" type="number"><br>
+        <label for="">tải tệp</label>
+        <input type="file" ><br>
+        <label for="">tải nhiều tệp</label>
+        <input type="file" multiple><br>
+        <label for="">bắt buộc nhập</label>
+        <input required><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea><br>
+        <button>login</button>
+     </form>
+</body>
+</html>
